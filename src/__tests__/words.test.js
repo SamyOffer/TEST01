@@ -10,4 +10,11 @@ describe("wordsFunction", () => {
         const result = wordsFunction(array);
         expect(result).toEqual(["hello", "world"]);
     });
+
+    test("should return an array of the elements without the letters x ", () => {
+        const array = ["hello", "world", "xasa", "xasas"];
+        const result = wordsFunction(array);
+        expect(result).toEqual(["hello", "world"]);
+    });
+
 });
