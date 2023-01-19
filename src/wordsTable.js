@@ -1,5 +1,8 @@
 function wordsFunction(arrays){
-    return arrays.filter((array) => !array.includes("x"));
+    return arrays.filter((array) => {
+        return !array.includes("x") && !array.includes("X");
+    }
+    );
 };
 
 module.exports = wordsFunction;

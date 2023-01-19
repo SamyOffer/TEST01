@@ -17,4 +17,10 @@ describe("wordsFunction", () => {
         expect(result).toEqual(["hello", "world"]);
     });
 
+    test("should return an array of the elements without the letters x and X ", () => {
+        const array = ["hello", "world", "xasa", "xasas", "Xasas", "Xasa"];
+        const result = wordsFunction(array);
+        expect(result).toEqual(["hello", "world"]);
+    });
+
 });
