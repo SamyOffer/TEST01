@@ -22,5 +22,4 @@ describe("wordsFunction", () => {
         const result = wordsFunction(array);
         expect(result).toEqual(["hello", "world"]);
     });
-
 });
